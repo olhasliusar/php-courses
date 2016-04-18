@@ -1,0 +1,186 @@
+<!DOCTYPE HTML>
+<html lang=“en”>
+<head>
+	<meta charset='UTF-8'>
+	<title> CSS CoWorking </title>
+	<!-- <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css'> -->
+	<link rel='stylesheet' href='css/font-awesome.min.css'>
+	<link rel='stylesheet' href='css/style.css'>
+</head>
+<body>
+
+	<header class='header'>
+		<div class='container'>
+			<h1 class='header__title'>CSS CoWorking</h1>
+			<i class="fa fa-bars fa-3x" aria-hidden="true"></i>
+			<nav>
+				<ul>
+					<li><a href="#home">Home</a></li>
+					<li><a href="#price">Price</a></li>
+					<li><a href="#events">Events</a></li>
+					<li><a href="#contact-us">Contact Us</a></li>
+					<li><a href="#login">Login</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<section class="home" id="home">
+		<div class="container">
+			<h2 class="home__title">Взаимопомощь, уютная атмосфера, развитие</h2>
+		</div>
+	</section>
+
+	<section class="price section" id="price">
+		<div class="container">
+			<div class="tariff">
+				<h2>9$</h2>
+				<p><i class="fa fa-wifi fa-3x"></i></p>
+				<p>Free 5 mb/s</p>
+				<p><i class="fa fa-graduation-cap fa-3x"></i></p>
+				<p>10 lessons</p>
+				<button class="button">
+					Join Now
+				</button>
+			</div>
+
+			<div class="tariff">
+				<h2>29$</h2>
+				<p><i class="fa fa-wifi fa-3x"></i></p>
+				<p>Free 40 mb/s</p>
+				<p><i class="fa fa-graduation-cap fa-3x"></i></p>
+				<p>70 lessons</p>
+				<button class="button">
+					Join Now
+				</button>
+			</div>
+
+			<div class="tariff">
+				<h2>59$</h2>
+				<p><i class="fa fa-wifi fa-3x"></i></p>
+				<p>Free 100 mb/s</p>
+				<p><i class="fa fa-graduation-cap fa-3x"></i></p>
+				<p>200 lessons</p>
+				<button class="button">
+					Join Now
+				</button>
+			</div>
+		</div>
+	</section>
+
+	<section class="events section" id="events">
+		<div class="container">
+			<h2 align="center" class="section__title">Events</h2>
+			<article class="post">
+				<img src="img/js.png" alt="java script">
+		        <div class="descriptions">
+		            <h2>Java Script 1.0</h2>
+		            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aperiam commodi deserunt doloremque doloribus
+		            eius esse ex itaque modi, nihil nisi odit, officia perspiciatis placeat praesentium repellat vel velit
+		            voluptatem. </p>
+		            <p class="date">Date : 24.04.2016 - 26.04.2016</p>
+		            <p class="address">Address : ul.Koybusheva 12a, GRASS Coworking</p>
+		            <p class="cost">Cost: 49$</p>
+		        </div>
+			</article>
+			<article class="post">
+		        <img src="img/angular.jpg" alt="java script">
+		        <div class="descriptions">
+		            <h2>Angular JS Beginer</h2>
+		            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aperiam commodi deserunt doloremque doloribus
+		                eius esse ex itaque modi, nihil nisi odit, officia perspiciatis placeat praesentium repellat vel velit
+		                voluptatem. </p>
+		            <p class="date">Date : 21.04.2016 - 16.08.2016</p>
+		            <p class="address">Address : ul.Koybusheva 12a, GRASS Coworking</p>
+		            <p class="cost">Cost: 249$</p>
+		        </div>
+		    </article>
+		    <article class="post">
+		        <img src="img/react.svg" alt="java script">
+		        <div class="descriptions">
+		            <h2>React v.15!</h2>
+		            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aperiam commodi deserunt doloremque doloribus
+		                eius esse ex itaque modi, nihil nisi odit, officia perspiciatis placeat praesentium repellat vel velit
+		                voluptatem. </p>
+		            <p class="date">Date : 14.05.2016 - 18.07.2016</p>
+		            <p class="address">Address : ul.Koybusheva 12a, GRASS Coworking</p>
+		            <p class="cost">Cost: 149$</p>
+		        </div>
+		    </article>
+		    <article class="post">
+		        <img src="img/wp.jpeg" alt="java script">
+		        <div class="descriptions">
+		            <h2>WordPress for everyone</h2>
+		            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aperiam commodi deserunt doloremque doloribus
+		                eius esse ex itaque modi, nihil nisi odit, officia perspiciatis placeat praesentium repellat vel velit
+		                voluptatem. </p>
+		            <p class="date">Date : 04.05.2016 - 29.07.2016</p>
+		            <p class="address">Address : ul.Koybusheva 12a, GRASS Coworking</p>
+		            <p class="cost">Cost: 99$</p>
+		        </div>
+		    </article>
+		</div>
+	</section>
+	<section class="contact-us section" id="contact-us">
+		<div class="container">
+			<form action="" method="post" class="form form_home">
+				<label for="name">Your Name:</label>
+				<input id="name" name="name" size="30" type="text">
+				<label for="email">Your email:</label>
+				<input id="email" name="email" size="30" type="text">
+				<label for="message">Your message:</label>
+				<textarea id="message" name="message" rows="7" cols="32"></textarea>
+				<br>
+				<input class="button" type="submit" value="Send email">
+			</form>
+		</div>
+	</section>
+
+	<footer class="footer">
+		<div class="container">
+			<p class="copyright">
+				&copy; 2016 Team IT Poltava
+			</p>
+
+			<a href="#subscribe" class="button">Subscribe</a>
+
+		    <a class="overlay" id="subscribe"></a>
+		    <div class="popup">
+		        <form action="" method="POST" class="form_popup cf">
+		            <label for="name-subscribes">Your name:</label> <br>
+		            <input id="name-subscribes" name="name" size="30" type="text"> <br>
+		            <label for="email-subscribes">Your email:</label> <br>
+		            <input id="email-subscribes" name="email" size="30" type="email"><br>
+		            <input class="button_small float-right" value="Subscribe" type="submit">
+			        <a class="button_small float-left" href="#close">Cansel</a>
+		        </form>
+		        <a class="close" title="Закрыть" href="#close"></a>
+		    </div>
+
+		    <a class="overlay" id="login"></a>
+		    <div class="popup">
+		        <form action="" method="POST" class="form_popup cf">
+		            <label for="name-login">Your name:</label> <br>
+		            <input id="name-login" name="name" size="30" type="text" pattern="[A-Za-z]{6,}"> <br>
+		            <label for="password-login">Your password:</label> <br>
+		            <input id="password-login" name="password" size="30" type="password"><br>
+
+					<label>
+						<input type="checkbox" onchange="document.getElementById('password-login').type = this.checked ? 'text' : 'password'">
+						Show password
+					</label>
+					<br>
+
+		            <input class="button_small float-left" value="Login" type="submit">
+		            <a class="button_small float-right" href="admin.html">Admin</a>
+		        </form>
+		        <a class="close" title="Закрыть" href="#close"></a>
+		    </div>
+
+		</div>
+	</footer>
+
+	<script src="js/jquery-1.12.3.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>

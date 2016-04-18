@@ -1,0 +1,166 @@
+<!DOCTYPE HTML>
+<html lang=“en”>
+<head>
+    <meta charset='UTF-8'>
+    <title> CSS CoWorking </title>
+    <!-- <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css'> -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel='stylesheet' href='css/style.css'>
+</head>
+<body class='admin-page'>
+
+    <header class='header'>
+        <div class='container'>
+            <h1 class='header__title'>CSS CoWorking</h1>
+            <i class="fa fa-bars fa-3x" aria-hidden="true"></i>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#add">Create Post</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="table">
+        <div class='container'>
+            <h2> Post Table </h2>
+            <table>
+                <thead>
+                <tr>
+                    <td> Title </td>
+                    <td> Date Begin </td>
+                    <td> Date End </td>
+                    <td> Date Created </td>
+                    <td> Address </td>
+                    <td> View </td>
+                    <td> Edit </td>
+                </tr>
+                </thead>
+                <tbody>
+                <tr data-row="0">
+                    <td> JS Advanced 0 </td>
+                    <td> 12.04.2015 </td>
+                    <td> 14.05.2016 </td>
+                    <td> 03.02.2015 </td>
+                    <td> ul.Shevchenka 30b </td>
+                    <td class="view">
+                        <a class="table__link_view" href="#view"> <i class="fa fa-eye" aria-hidden="true"></i> </a>
+                    </td>
+                    <td class="edit">
+                        <a class="table__link_edit" href="#edit"> <i class="fa fa-pencil" aria-hidden="true"></i> </a>
+                    </td>
+                </tr>
+                <tr data-row="1">
+                    <td> JS Advanced 1 </td>
+                    <td> 12.04.2015 </td>
+                    <td> 14.05.2016 </td>
+                    <td> 03.02.2015 </td>
+                    <td> ul.Shevchenka 31b </td>
+                    <td class="view">
+                        <a class="table__link_view" href="#view"> <i class="fa fa-eye" aria-hidden="true"></i> </a>
+                    </td>
+                    <td class="edit">
+                        <a class="table__link_edit" href="#edit"> <i class="fa fa-pencil" aria-hidden="true"></i> </a>
+                    </td>
+                </tr>
+                <tr data-row="2">
+                    <td> JS Advanced 2 </td>
+                    <td> 12.04.2015 </td>
+                    <td> 14.05.2016 </td>
+                    <td> 03.02.2015 </td>
+                    <td> ul.Shevchenka 32b </td>
+                    <td class="view">
+                        <a class="table__link_view" href="#view"> <i class="fa fa-eye" aria-hidden="true"></i> </a>
+                    </td>
+                    <td class="edit">
+                        <a class="table__link_edit" href="#edit"> <i class="fa fa-pencil" aria-hidden="true"></i> </a>
+                    </td>
+                </tr>
+                <tr data-row="3">
+                    <td> JS Advanced 3 </td>
+                    <td> 12.04.2015 </td>
+                    <td> 14.05.2016 </td>
+                    <td> 03.02.2015 </td>
+                    <td> ul.Shevchenka 33b </td>
+                    <td class="view">
+                        <a class="table__link_view" href="#view"> <i class="fa fa-eye" aria-hidden="true"></i> </a>
+                    </td>
+                    <td class="edit">
+                        <a class="table__link_edit" href="#edit"> <i class="fa fa-pencil" aria-hidden="true"></i> </a>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <a class="overlay" id="view"></a>
+        <div class="popup">
+            <section class="admin-event_view">
+                <h3>Title of event</h3>
+                <p class="admin-event__title">Angular JS Beginer</p>
+                <h3>Date Begin :</h3>
+                <p class="admin-event__date_begin"></p>
+                <h3>Date End :</h3>
+                <p class="admin-event__date_end"></p>
+                <h3>Date Created :</h3>
+                <p class="admin-event__date_created"></p>
+                <h3>Address :</h3>
+                <p class="admin-event__address"></p>
+            </section>
+            <a class="close" title="Закрыть" href="#close"></a>
+        </div>
+
+        <a class="overlay" id="edit"></a>
+        <div class="popup">
+            <form action="" method="POST" class="form_popup form_admin form_edit cf">
+                <label for="title">Title:</label> <br>
+                <input id="title" name="title" type="text"> <br>
+
+                <label for="date_begin">Date Begin:</label> <br>
+                <input id="date_begin" name="date_begin" type="text"><br>
+
+                <label for="date_end">Date End:</label> <br>
+                <input id="date_end" name="date_end" type="text"><br>
+
+                <label for="date_created">Date Created:</label> <br>
+                <input id="date_created" name="date_created" type="text"><br>
+
+                <label for="address">Address:</label> <br>
+                <input id="address" name="address" type="text"><br>
+
+                <input class="button_small float-right" value="Save" type="button" id="edit-save">
+                <a class="button_small float-left" href="#close">Cansel</a>
+            </form>
+            <a class="close" title="Закрыть" href="#close"></a>
+        </div>
+
+        <a class="overlay" id="add"></a>
+        <div class="popup">
+            <form action="" method="POST" class="form_popup form_admin form_add cf">
+                <label for="add-title">Title:</label> <br>
+                <input id="add-title" name="title" type="text"> <br>
+
+                <label for="add-date_begin">Date Begin:</label> <br>
+                <input id="add-date_begin" name="date_begin" type="text"><br>
+
+                <label for="add-date_end">Date End:</label> <br>
+                <input id="add-date_end" name="date_end" type="text"><br>
+
+                <label for="add-date_created">Date Created:</label> <br>
+                <input id="add-date_created" name="date_created" type="text"><br>
+
+                <label for="add-address">Address:</label> <br>
+                <input id="add-address" name="address" type="text"><br>
+
+                <input class="button_small float-right" value="Create" type="button" id="add-button">
+            </form>
+            <a class="close" title="Закрыть" href="#close"></a>
+        </div>
+    </section>
+
+    <script src="js/jquery-1.12.3.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/admin-table.js"></script>
+</body>
+</html>
