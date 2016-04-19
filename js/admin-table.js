@@ -1,26 +1,17 @@
 $(document).ready(function() {
 
-	$('.table__link_view').click(function(e){
-
-        console.log("entered in function");
-
-        var rowButton = $(this).parent().parent();
-        console.log(rowButton.data("row"));
+	$(document).on('click', '.table__link_view', function(e){
 
         for (var i = 0; i < 6; i++) {
-            $('.admin-event_view p:nth-of-type(' + i + ')').text( rowButton.find('td:nth-child(' + i + ')').html() );
+        	$('.admin-event_view p:nth-of-type(' + i + ')').text( $(this).parent().parent().find('td:nth-child(' + i + ')').html() );
         }
-
-        // for (var i = 0; i < 6; i++) {
-        // 	$('.admin-event_view p:nth-of-type(' + i + ')').text( $(this).parent().parent().find('td:nth-child(' + i + ')').html() );
-        // }
 
     });
 
 
     var rowEdit = 0;
 
-    $('.table__link_edit').click(function(e){
+    $(document).on('click', '.table__link_edit', function(e){
 
         rowEdit = $(this).parent().parent().data("row");
 
